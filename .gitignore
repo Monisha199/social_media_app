@@ -1,0 +1,5 @@
+# below line ignore node_modules to be taken to remote repository as this file is heavy we want the user to jus download
+# the code from git hub and install the packages from package.json,do not simply make our remote repo heavy by including node_modules
+node_modules/  
+
+
