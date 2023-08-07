@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>SigIn page</title>
+    </head>
+    <body>
+        <form action="/users/create-session" method="POST">
+            <label for="email_input">Email</label>
+            <input type="email" id="email_input" name="email_data" placeholder="Enter email id" required><br/>
+            <label for="password_input">Password</label>
+            <input type="password" id="password_input" name="password_data" required><br/>
+            <!-- <label for="name-input">Name</label>
+            <input type="text" id="name-input" name="name_data"><br/>    -->
+            <input type="submit" value="Sign In">
+        </form>
+    </body>
+</html>

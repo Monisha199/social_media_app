@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>SigIn page</title>
+    </head>
+    <body>
+        <form action="/users/create" method="POST">
+            <label for="name-input">Name</label>
+            <input type="text" id="name-input" name="name" required><br/>  
+            <label for="email_input">Email</label>
+            <input type="email" id="email_input" name="email" placeholder="Enter email id" required><br/><!-- make sure name="email"
+            is the same as email field in models/user.js for example if you give name="email_data" in this file make sure to give field 
+            name with same "email_data" otherwise once we submit our form while parsing url and create a user in database it show error -->
+            <label for="password_input">Password</label>
+            <input type="password" id="password_input" name="password" required><br/> 
+            <label for="confirm_password_input">Confirm Password</label>
+            <input type="password" id="confirm_password_input" name="confirm_password_data" required><br/> 
+            <input type="submit" value="Sign Up">
+        </form>
+    </body>
+</html>
