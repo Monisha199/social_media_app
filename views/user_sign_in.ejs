@@ -3,14 +3,22 @@
         <title>SigIn page</title>
     </head>
     <body>
-        <form action="/users/create-session" method="POST">
-            <label for="email_input">Email</label>
-            <input type="email" id="email_input" name="email" placeholder="Enter email id" required><br/>
-            <label for="password_input">Password</label>
+        <link rel="stylesheet" href="/css/signin.css">
+        <div id="signIn-form">
+        <form action="/users/create-session" method="POST" >
+            <br>
+            <label for="email_input">Email  &ensp;&ensp;&ensp;</label>
+            <input type="email" id="email_input" name="email" placeholder="Enter email id" required><br/><br>
+            <label for="password_input">Password &ensp;</label>
             <input type="password" id="password_input" name="password" required><br/>
             <!-- <label for="name-input">Name</label>
             <input type="text" id="name-input" name="name_data"><br/>    -->
+            <a href=""><i>Forgot Password</i></a><br><br>
             <input type="submit" value="Sign In">
         </form>
+        <p>
+            <a href="/users/auth/google/">Google SignIn / Sign Up</a>
+        </p>
+        </div>
     </body>
 </html>

@@ -1,0 +1,13 @@
+
+body{
+    text-align: center;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.AjZlSyoXAXdV_PVrhUMg6QHaEo&pid=Api&P=0&h=180")
+}
+#signIn-form{
+    margin-top: 50px;
+    border: 2px solid lightgray;
+    width:500px;
+    /* height:500px; */
+    margin-left: 34%;
+    background-color: rgba(255,255,255,0.5)
+}

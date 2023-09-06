@@ -1,9 +1,17 @@
-<header>
-    Page Header
+<header id="layout-header">
+    <nav>
+        <div class="mini-logo">
+            <p>
+                <a href='/'>
+                    codeial
+                </a>
+            </p>
+        </div>
+        <div class="auth-links">
     <ul>
         <% if (locals.user){ %>
             <li>
-                <a href="/users/profile"><%=user.name%></a>
+                <a href="/users/profile/<%=user._id%>"><%=user.name%></a>
             </li>
             <li>
                 <a href="/users/sign-out">Sign Out</a>
@@ -17,4 +25,6 @@
             </li>
         <%}%>
     </ul>
+    </div>
+    </nav>
 </header>

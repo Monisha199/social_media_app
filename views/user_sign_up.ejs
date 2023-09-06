@@ -1,20 +1,28 @@
 <html>
     <head>
-        <title>SigIn page</title>
+        <title>SignUp page</title>
     </head>
     <body>
+        <link rel="stylesheet" href="/css/signin.css">
+        <div id="signIn-form">
         <form action="/users/create" method="POST">
-            <label for="name-input">Name</label>
-            <input type="text" id="name-input" name="name" required><br/>  
-            <label for="email_input">Email</label>
-            <input type="email" id="email_input" name="email" placeholder="Enter email id" required><br/><!-- make sure name="email"
+            <div style="height:10px"></div>
+            <label for="name-input">Name &emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <input type="text" id="name-input" name="name" placeholder="Enter name" required><br/>  <br>
+            <label for="email_input">Email&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <input type="email" id="email_input" name="email" placeholder="Enter email id" required><br/><br><!-- make sure name="email"
             is the same as email field in models/user.js for example if you give name="email_data" in this file make sure to give field 
             name with same "email_data" otherwise once we submit our form while parsing url and create a user in database it show error -->
-            <label for="password_input">Password</label>
-            <input type="password" id="password_input" name="password" required><br/> 
+            <label for="password_input">Password &emsp;&emsp;&emsp;&ensp;</label>
+            <input type="password" id="password_input" name="password" placeholder="Enter password" required><br/> <br>
             <label for="confirm_password_input">Confirm Password</label>
-            <input type="password" id="confirm_password_input" name="confirm_password_data" required><br/> 
+            <input type="password" id="confirm_password_input" name="confirm_password_data" placeholder="Re-enter password" required><br/> <br>
             <input type="submit" value="Sign Up">
         </form>
+
+        <p>
+            <a href="/users/auth/google/">Google SignIn / Sign Up</a>
+        </p>
+        </div>
     </body>
 </html>
